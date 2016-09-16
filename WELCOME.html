@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="signin.css"/>
+        <script src="jquery.js"></script>
+        <script src="signin.js"></script>
+    </head>
+    <body>
+	<h1>TEAM 12 FORUMS</h1>
+    <div class="other">
+        <form action="http://localhost:8081/categories">
+            <button type="submit" name="enter">ENTER SITE</button>
+            </form>
+    <form action="http://localhost:8081/register" method='POST'>
+            REGISTER:
+            <div class='inputContainer'>
+            <label for='uname'>Username:</label>
+            <input type="text" class="uname" placeholder="Username" name="username"/>
+            </div>
+            <div class='inputContainer'>
+            <label for='pwd'>Password:</label>
+            <input type="text" class="pwd" placeholder="Password" name="password"/>
+            </div>
+            <div class="buttonContainer">
+            <button type="submit" name="register">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="loginContainer">
+            LOGIN:
+            <form action="http://localhost:8081/login" method='POST'>
+            <div class='inputContainer'>
+            <label for='uname'>Username:</label>
+            <input type="text" class="uname" placeholder="Username" name="username"/>
+            </div>
+            <div class='inputContainer'>
+            <label for='pwd'>Password:</label>
+            <input type="text" class="pwd" placeholder="Password" name="password"/>
+            </div>
+            <div class="buttonContainer">
+            <button type="submit" name="login">Login</button>
+            </div>
+                </form>
+        </div>
+		<p>Note:&nbsp;&nbsp;&nbsp;Make sure serverREST.py is running at localhost:8081 !!</p>
+    </body>
+</html>
